@@ -1,0 +1,38 @@
+.works_main_box_parent {
+    margin-top: 5%;
+    display: flex;
+}
+
+.works_main_box_dispgrid {
+    margin-top: 5%;
+    display: grid;
+    width: 400px;
+}
+
+.works_main_box_header {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgba(25,25,25,0.5);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.works_main_box_about {
+    margin-top: 5%;
+    color: black;
+    text-align:justify;
+    line-height: 1.5;
+    background-color: rgba(255,255,255,0.5);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.workbench {
+    text-align: center;
+    margin-top: 5%;
+}
+
+.workbench_addresses {
+    display: flex;
+}

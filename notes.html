@@ -1,0 +1,113 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Мои заметки</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="notesStyle.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    </head>
+
+    <header>
+
+        <div class="header_logo_box">
+            <a href="index.html">O2Helper</a>
+        </div>
+
+        <div class="header_navBar">
+            <a href="index.html">ГЛАВНАЯ</a>
+            <a href="#">МЕНЮ</a>
+        </div>
+
+    </header>
+
+    <body>
+        <div class="notes_main_box_parent">
+            <div class="notes_workspace">
+
+                <div class="notes_main_box_header">
+                    <p>Мои заметки</p>
+                </div>
+
+                <div class="add_note_text_field">
+                    <div class="add_note_text_field_header">
+                        <p>Введите текст своей заметки:</p>
+                    </div>
+
+                    <div class="add_note_text_field_textarea">
+                        <textarea></textarea>
+                    </div>
+                </div>
+
+                <div class="add_delete_buttons_box">
+                    <button><span class="material-symbols-outlined">
+                        stylus_note
+                        </span></button>
+                </div>
+
+            </div>
+        </div>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+    const addButton = document.querySelector(".add_delete_buttons_box button");
+    const noteTextarea = document.querySelector(".add_note_text_field_textarea textarea");
+    const notesContainer = document.createElement("div");
+    notesContainer.className = "notes_container";
+    document.querySelector(".notes_workspace").appendChild(notesContainer);
+
+    // Функция для загрузки заметок из LocalStorage при загрузке страницы
+    function loadNotes() {
+        const savedNotes = JSON.parse(localStorage.getItem("notes")) || [];
+        savedNotes.forEach(function (noteText) {
+            createNoteElement(noteText);
+        });
+    }
+
+    // Функция для сохранения заметок в LocalStorage
+    function saveNotes() {
+        const noteElements = document.querySelectorAll(".note_item p");
+        const noteTexts = Array.from(noteElements).map(function (noteElement) {
+            return noteElement.textContent;
+        });
+        localStorage.setItem("notes", JSON.stringify(noteTexts));
+    }
+
+    // Функция для создания элемента заметки и добавления его на страницу
+    function createNoteElement(noteText) {
+        const noteItem = document.createElement("div");
+        noteItem.className = "note_item";
+        noteItem.innerHTML = `
+            <p>${noteText}</p>
+            <button class="delete_button"><span class="material-symbols-outlined">
+done
+</span></button>
+        `;
+        notesContainer.appendChild(noteItem);
+
+        const deleteButton = noteItem.querySelector(".delete_button");
+        deleteButton.addEventListener("click", function () {
+            notesContainer.removeChild(noteItem);
+            saveNotes(); // Сохраняем заметки после удаления
+        });
+    }
+
+    // Загружаем заметки при загрузке страницы
+    loadNotes();
+
+    addButton.addEventListener("click", function () {
+        const noteText = noteTextarea.value.trim();
+        if (noteText !== "") {
+            createNoteElement(noteText);
+            noteTextarea.value = "";
+            saveNotes(); // Сохраняем заметки после добавления
+        } else {
+            alert("Введите текст заметки");
+        }
+    });
+});
+
+        </script>
+    </body>
+
+</html>

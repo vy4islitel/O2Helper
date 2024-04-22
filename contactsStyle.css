@@ -1,0 +1,65 @@
+.contacts_box_parent {
+    margin-top: 10%;
+    width: 400px;
+    display: flex;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(25,25,25,0.5);
+}
+
+.contacts_box_child_togrid {
+    display: grid;
+}
+
+.contacts_box_header {
+    color: white;
+    background-color: rgba(25,25,25,0.5);
+    font-weight: bold;
+}
+
+.contacts_box_flex_columns {
+    margin-top: 5%;
+    display: flex;
+}
+
+.contacts_box_left_column_CC {
+    width: 200px;
+    display: grid;
+    color: white;
+}
+
+.contacts_box_right_column_OP {
+    width: 200px;
+    display: grid;
+    color: white;
+}
+
+.contacts_box_left_column_CC_choosebox {
+    margin-top: 2%;
+}
+
+.contacts_box_left_column_CC_choosebox select {
+    height: 25px;
+    width: 150px;
+}
+
+.contacts_box_left_column_CC_resultbox {
+    margin-top: 2%;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.contacts_box_right_column_OP_choosebox {
+    margin-top: 2%;
+}
+
+.contacts_box_right_column_OP_choosebox select {
+    height: 25px;
+    width: 160px;
+}
+
+.contacts_box_right_column_OP_resultbox {
+    margin-top: 2%;
+    text-align: center;
+    line-height: 1.5;
+}

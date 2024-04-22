@@ -1,0 +1,127 @@
+.answers_main_box_parent {
+    width: 400px;
+    margin-top: 10%;
+    display: flex;
+}
+
+.answers_main_box_parent_child_grid {
+    display: grid;
+}
+
+.answers_main_box_header {
+    font-weight: bold;
+    width: 400px;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    padding: 15px;
+    background-color: rgba(25,25,25,0.5);
+    border-radius: 10px;
+}
+
+.input_tt_number_box {
+    display: flex;
+    margin-top: 5%;
+    align-items: center;
+}
+
+.input_tt_number_box label {
+    width: 300px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.input_tt_number_box input {
+    border-radius: 5px;
+    text-align: center;
+    width: 100px;
+    height: 30px;
+}
+
+.say_hi_box {
+    margin-top: 5%;
+    display: flex;
+}
+
+.say_hi_box label {
+    width: 300px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.say_hi_box input {
+    width: 100px;
+}
+
+.flex_answ_buttons_row_one {
+
+    margin-top: 10%;
+    display: flex;
+    width: 400px;
+}
+
+.flex_answ_buttons_row_one button {
+    width: 100px;
+    height: 80px;
+    background-color: rgba(25,25,25,0.5);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.flex_answ_buttons_row_one button:hover {
+    color: black;
+    background-color: white;
+    transition: 0.5s ease;
+}
+
+.grid_ans_buttons_row_second {
+    margin-top: 10%;
+    display: grid;
+}
+
+.grid_ans_buttons_row_second button {
+    width: 400px;
+    height: 60px;
+    margin-top: 2%;
+    color: white;
+    background-color: rgba(25,25,25,0.5);
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.grid_ans_buttons_row_second button:hover {
+    color: black;
+    background-color: white;
+    transition: 0.5s ease;
+}
+
+.your_answer_is_here {
+    width: 400px;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.your_answer_is_here_header {
+    width: 400px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.answers_box_to_html {
+    margin-top: 5%;
+}
+
+.answers_box_to_html textarea {
+    width: 400px;
+    height: 100px;
+    resize: none;
+}

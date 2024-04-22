@@ -1,0 +1,116 @@
+* {
+    margin: 0 auto;
+    font-family: Arial;
+}
+
+body {
+    background-color: rgb(25,25,25,0.9);
+}
+
+header {
+    height: 55px;
+    padding: 5px;
+    display: flex;
+    background-color: rgb(25,25,25);
+    align-items: center;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+.header_logo_box {
+    font-weight: bold;
+}
+
+.header_navBar a {
+    padding: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.header_navBar a:hover {
+    background-color: white;
+    color: black;
+    transition: 0.5s ease;
+}
+
+.main_menu {
+    width: 300px;
+    margin-top: 10%;
+    display: flex;;
+}
+
+.main_menu_grid_style {
+    display: grid;
+}
+
+.main_menu_flex_first {
+    width: 300px;
+    display: flex;
+}
+
+.main_menu_flex_first button {
+    cursor: pointer;
+    background-color: rgb(25,25,25,0.5);
+    color: white;
+    border-radius: 10px;
+    margin: 10px;
+    border: none;
+    padding: 5px;
+    width: 100px;
+    height: 80px;
+    transition: 0.3s ease-in-out;
+}
+
+.main_menu_flex_first button:hover {
+    color: black;
+    background-color: white;
+    transition: 0.5s ease;
+}
+
+.main_menu_flex_second {
+    width: 300px;
+    display: flex;
+}
+
+.main_menu_flex_second button {
+    cursor: pointer;
+    background-color: rgb(25,25,25,0.5);
+    color: white;
+    border: none;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 100px;
+    height: 80px;
+    transition: 0.3s ease-in-out;
+}
+
+.main_menu_flex_second button:hover {
+    color: black;
+    background-color: white;
+    transition: 0.5s ease;
+}
+
+.what_did_you_chose {
+    display: none;
+    margin-top: 5%;
+    background-color: rgb(25,25,25,0.5);
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 10px;
+    animation: 1s show ease;
+}
+
+@keyframes show {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+footer {
+    margin-top: 5%;
+    text-align: center;
+    color: white;
+}

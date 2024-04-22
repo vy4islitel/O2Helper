@@ -1,0 +1,10 @@
+{
+    "name": "O2Helper",
+    "description": "Ваш персональный помощник по работе в технической поддержке.",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": ["activeTab", "scripting"],
+    "action": {
+        "default_popup": "index.html"
+    }
+}

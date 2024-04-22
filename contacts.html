@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Контакты</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="contactsStyle.css">
+        <script defer src="contacts.js"></script>
+        <script defer src="contactsScript.js"></script>
+    </head>
+
+    <header>
+
+        <div class="header_logo_box">
+            <a href="index.html">O2Helper</a>
+        </div>
+
+        <div class="header_navBar">
+            <a href="index.html">ГЛАВНАЯ</a>
+            <a href="#">МЕНЮ</a>
+        </div>
+
+    </header>
+
+    <body>
+        <div class="contacts_box_parent">
+            <div class="contacts_box_child_togrid">
+                <div class="contacts_box_header">
+                    <p>Контакты операторов и CallCenter</p>
+                </div>
+                <div class="contacts_box_flex_columns">
+                    <div class="contacts_box_left_column_CC">
+                        <div class="contacts_box_left_column_CC_header">
+                            <p>Контакты CallCenter</p>
+                        </div>
+                        <div class="contacts_box_left_column_CC_choosebox">
+                            <select id="selectedCC">
+                                <option>Архангельск</option>
+                                <option>Барнаул</option>
+                                <option>Белгород</option>
+                                <option>Иркутск</option>
+                                <option>Казань</option>
+                                <option>Каменск-Шахтинский</option>
+                                <option>Красноярск</option>
+                                <option>Липецк</option>
+                                <option>Новороссийск</option>
+                                <option>Омск</option>
+                                <option>Саратов</option>
+                                <option>Соликамск</option>
+                                <option>Сочи</option>
+                                <option>Санкт-Петербург</option>
+                                <option>Тюмень</option>
+                            </select>
+                        </div>
+                        <div class="contacts_box_left_column_CC_resultbox">
+                            <p id="ccToHTMLemail">Почта</p>
+                            <p id="ccToHTMLphone">Телефон</p>
+                        </div>
+                    </div>
+                    <div class="contacts_box_right_column_OP">
+                        <div class="contacts_box_right_column_OP_header">
+                            <p>Контакты операторов</p>
+                        </div>
+                        <div class="contacts_box_right_column_OP_choosebox">
+                            <select id="selectedOP">
+                                <option>Мастертел</option>
+                                <option>Марафон</option>
+                                <option>NetOne</option>
+                                <option>Телеком-Биржа (Cirex)</option>
+                                <option>Юл-Ком</option>
+                                <option>Ростелеком</option>
+                                <option>RETN</option>
+                                <option>Orange</option>
+                            </select>
+                        </div>
+                        <div class="contacts_box_right_column_OP_resultbox">
+                            <p id="opToHTMLemail">Почта</p>
+                            <p id="opToHTMLphone">Телефон</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

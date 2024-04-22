@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Быстрые заметки</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="answersStyle.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <script defer src="answers.js"></script>
+    </head>
+
+    <body>
+
+        <header>
+
+            <div class="header_logo_box">
+                <a href="index.html">O2Helper</a>
+            </div>
+
+            <div class="header_navBar">
+                <a href="index.html">ГЛАВНАЯ</a>
+                <a href="#">МЕНЮ</a>
+            </div>
+
+        </header>
+
+        <div class="answers_main_box_parent">
+            <div class="answers_main_box_parent_child_grid">
+                <div class="answers_main_box_header">
+                    <p>Быстрые ответы</p>
+                </div>
+
+                <div class="input_tt_number_box">
+                    <label>Номер заявки:</label>
+                    <input type="text" placeholder="xxxxxx" id="ttNumber">
+                </div>
+
+                <div class="say_hi_box">
+                    <label>Поздороваться?</label>
+                    <input type="checkbox" id="sayHiCheckbox">
+                </div>
+
+                <div class="flex_answ_buttons_row_one">
+                    <button id="ttCreatedBtn"><span class="material-symbols-outlined">
+                        add_task
+                        </span></button>
+                    <button id="ttCanWeCloseBtn"><span class="material-symbols-outlined">
+                        question_mark
+                        </span></button>
+                    <button id="ttIsClosedBtn"><span class="material-symbols-outlined">
+                        close
+                        </span></button>
+                </div>
+
+                <div class="grid_ans_buttons_row_second">
+                    <button id="ttNeedMoreInfoBtn">Нужна доп. информация</button>
+                    <button id="ttNewInfoCameBtn">Появилась доп. информация</button>
+                    <button id="ttSolutionBtn">Появилось решение</button>
+                </div>
+
+                <div class="your_answer_is_here">
+                    <div class="your_answer_is_here_header">
+                        <p>Текст вашего ответа:</p>
+                    </div>
+
+                    <div class="answers_box_to_html" id="answerBoxToHTML"></div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
