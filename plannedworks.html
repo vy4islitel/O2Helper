@@ -1,9 +1,9 @@
 <html>
     <head>
-        <meta charset="UTF-8">
         <title>Плановые работы</title>
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="plannedworksStyle.css">
+        <script defer src="plannedWorksScript.js"></script>
     </head>
 
     <body>
@@ -32,35 +32,71 @@
 
                 <div class="workbench">
                     <div class="workbench_task">
-                        <p>Введите № задачи в iTasks:</p>
-                        <input type="number" placeholder="xxxxxx">
-                    </div>
-                    <div class="workbench_type">
-                        <p>Выберите тип работ:</p>
-                        <select>
-                            <option>Плановые</option>
-                            <option>Аварийные</option>
-                        </select>
+                        <div class="input_task_number">
+                            <p>Номер задачи:</p>
+                        <input type="number" placeholder="xxxxxx" id="inputTaskNumber">
+                        </div>
+                        <div class="workbench_type">
+                            <p>Тип работ:</p>
+                            <select id="selectTypeOfWorks">
+                                <option>Плановые</option>
+                                <option>Аварийные</option>
+                            </select>
+                        </div>
                     </div>
                     <div class="workbench_service">
                         <p>Выберите услугу (сервис):</p>
-                        <select>
+                        <select id="selectService">
                             <option>ВОЛС</option>
                             <option>Канал Связи</option>
                         </select>
                     </div>
                     <div class="workbench_addresses">
                         <div class="workbench_addresses_a">
-                            <p>Введите адрес точки А:</p>
-                            <input type="text">
+                            <p>Точка А:</p>
+                            <input type="text" id="inputAddressA">
                         </div>
                         <div class="workbench_addresses_b">
-                            <p>Введите адрес точки Б:</p>
-                            <input type="text">
+                            <p>Точка Б:</p>
+                            <input type="text" id="inputAddressB">
                         </div>
                     </div>
                     <div class="workbench_date">
-                        
+                        <div class="workbench_date_a">
+                            <p>Дата начала:</p>
+                            <input type="date" id="inputDateA">
+                            <p>Время начала:</p>
+                            <input type="time" id="inputTimeA">
+                        </div>
+                        <div class="workbench_date_b">
+                            <p>Дата окончания:</p>
+                            <input type="date" id="inputDateB">
+                            <p>Время окончания:</p>
+                            <input type="time" id="inputTimeB">
+                        </div>
+                    </div>
+                    <div class="workbench_stopservice">
+                        <div class="workbench_stopservice_left">
+                            <p>Кол-во прерываний:</p>
+                            <select id="selectStopList">
+                                <option>Одно</option>
+                                <option>Два</option>
+                                <option>Три</option>
+                                <option>Четыре</option>
+                                <option>Пять</option>
+                            </select>
+                        </div>
+                        <div class="workbench_stopservice_right">
+                            <p>Длительность:</p>
+                            <input type="text" placeholder="в мин." id="inputRange">
+                        </div>
+                    </div>
+                    <div class="generate_button_box">
+                        <button id="generateBtn">Сгенерировать!</button>
+                    </div>
+
+                    <div class="nodisp_generated_text_area" id="generatedTextBox">
+                        <textarea id="textToHTML"></textarea>
                     </div>
                 </div>
             </div>

@@ -25,6 +25,7 @@ header a {
 }
 
 .header_navBar a {
+    font-weight: bold;
     padding: 10px;
     transition: 0.3s ease-in-out;
 }
@@ -33,6 +34,7 @@ header a {
     background-color: white;
     color: black;
     transition: 0.5s ease;
+    border-radius: 5px;
 }
 
 .main_menu {
@@ -113,4 +115,16 @@ footer {
     margin-top: 5%;
     text-align: center;
     color: white;
+}
+
+.changelog_box {
+    margin-top: 3%;
+}
+
+.changelog_box h {
+    font-weight: bold;
+}
+
+.changelog_box p {
+    margin-top: 1%;
 }

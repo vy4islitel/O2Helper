@@ -21,7 +21,7 @@
 .works_main_box_about {
     margin-top: 5%;
     color: black;
-    text-align:justify;
+    text-align: center;
     line-height: 1.5;
     background-color: rgba(255,255,255,0.5);
     padding: 10px;
@@ -33,6 +33,141 @@
     margin-top: 5%;
 }
 
-.workbench_addresses {
+.workbench_task {
     display: flex;
+    margin-top: 5%;
+    color: white;
+}
+
+.workbench_task input {
+    margin-top: 5px;
+    width: 150px;
+    height: 30px;
+}
+
+.workbench_type {
+    color: white;
+}
+
+.workbench_type select {
+    margin-top: 5px;
+    width: 150px;
+    height: 30px;
+}
+
+.workbench_service {
+    margin-top: 5%;
+    color: white;
+}
+
+.workbench_service select {
+    margin-top: 5px;
+    width: 350px;
+    height: 30px;
+}
+
+.workbench_addresses {
+    margin-top: 5%;
+    display: flex;
+    color: white;
+}
+
+.workbench_addresses input {
+    width: 150px;
+    height: 30px;
+}
+
+.workbench_addresses_a {
+    width: 200px;
+}
+
+.workbench_addresses_b {
+    width: 200px;
+}
+
+.workbench_date {
+    margin-top: 5%;
+    display: flex;
+    color: white;
+}
+
+.workbench_date input {
+    margin-top: 5px;
+    width: 150px;
+    height: 30px;
+}
+
+.workbench_date p {
+    margin-top: 5px;
+}
+
+.workbench_date_a {
+    width: 200px;
+}
+
+.workbench_date_b {
+    width: 200px;
+}
+
+.workbench_stopservice {
+    margin-top: 5%;
+    display: flex;
+    color: white;
+}
+
+.workbench_stopservice_left {
+    width: 200px;
+}
+
+.workbench_stopservice_left select {
+    margin-top: 5px;
+    width: 150px;
+    height: 30px;
+}
+
+.workbench_stopservice_right {
+    width: 200px;
+}
+
+.workbench_stopservice_right input {
+    margin-top: 5px;
+    width: 150px;
+    height: 30px;
+}
+
+.generate_button_box {
+    margin-top: 5%;
+    display: flex;
+}
+
+.generate_button_box button {
+    background-color: rgba(25,25,25,0.5);
+    border: none;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+
+.generate_button_box button:hover {
+    background-color: white;
+    color: black;
+    transition: 0.5s ease;
+}
+
+.nodisp_generated_text_area {
+    margin-top: 5%;
+    display: none;
+}
+
+.nodisp_generated_text_area textarea {
+    resize: none;
+    width: 400px;
+    height: 350px;
+    background-color: rgba(25,25,25,0.5);
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
 }

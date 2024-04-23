@@ -28,10 +28,6 @@ toPassButton.addEventListener('mouseleave', function() {
     whatDidYouChose.outerHTML
 })
 
-toPassButton.onclick = function() {
-    alert('В разработке!')
-}
-
 const toContactsButton = document.getElementById('toContactsBtn')
 
 toContactsButton.addEventListener('mouseover', function() {
@@ -61,7 +57,7 @@ toWorksButton.addEventListener('mouseleave', function() {
 })
 
 toWorksButton.onclick = function() {
-    alert('В разработке!')
+    window.location.href = 'plannedworks.html'
 }
 
 const toRouteButton = document.getElementById('toRouteBtn')
@@ -75,10 +71,6 @@ toRouteButton.addEventListener('mouseleave', function () {
     whatDidYouChose.style.display = 'none'
     whatDidYouChose.outerHTML
 })
-
-toRouteButton.onclick = function() {
-    alert('В разработке!')
-}
 
 const toNotesButton = document.getElementById('toNotesBtn')
 
