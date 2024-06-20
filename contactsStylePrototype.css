@@ -1,0 +1,58 @@
+.contacts_paper {
+    width: 400px;
+    margin-top: 10%;
+    display: flex;
+    border-radius: 5px;
+}
+
+.contacts_paper_toDispGrid {
+    display: grid;
+}
+
+.contacts_paper_toDispGrid_header {
+    background-color: rgba(25,25,25,0.9);
+    width: 400px;
+    display: flex;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.contacts_paper_chooseBox {
+    margin-top: 10%;
+    display: flex;
+}
+
+.contacts_paper_chooseBox_toDispGrid {
+    display: grid;
+}
+
+.contacts_choosebox_button {
+    width: 420px;
+    padding: 10px;
+    background-color: rgba(25,25,25,0.9);
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.contacts_choosebox_button:hover {
+    background-color: rgba(255,255,255,0.9);
+    color: black;
+    transition: 0.3s ease;
+}
+
+.contacts_paper_choosedArgument_area {
+    margin-top: 10%;
+    display: flex;
+}
+
+.contacts_paper_choosedArgument_area_toDispGrid {
+    display: grid;
+}

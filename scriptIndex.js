@@ -20,7 +20,7 @@ const toPassButton = document.getElementById('toPassBtn')
 
 toPassButton.addEventListener('mouseover', function() {
     whatDidYouChose.style.display = 'block'
-    whatDidYouChose.innerHTML = `<p>Оформление пропуска</p>`
+    whatDidYouChose.innerHTML = `<p>Графики</p>`
 })
 
 toPassButton.addEventListener('mouseleave', function() {
@@ -28,11 +28,15 @@ toPassButton.addEventListener('mouseleave', function() {
     whatDidYouChose.outerHTML
 })
 
+toPassButton.onclick = function() {
+    alert('В разработке!')
+}
+
 const toContactsButton = document.getElementById('toContactsBtn')
 
 toContactsButton.addEventListener('mouseover', function() {
     whatDidYouChose.style.display = 'block'
-    whatDidYouChose.innerHTML = `<p>Контакты операторов и CallCenter</p>`
+    whatDidYouChose.innerHTML = `<p>Контакты (NEW)</p>`
 })
 
 toContactsButton.addEventListener('mouseleave', function() {
@@ -41,7 +45,7 @@ toContactsButton.addEventListener('mouseleave', function() {
 })
 
 toContactsButton.onclick = function() {
-    window.location.href = 'contacts.html'
+    window.location.href = 'contacts_dataBase.html'
 }
 
 const toWorksButton = document.getElementById('toWorksBtn')
@@ -71,6 +75,11 @@ toRouteButton.addEventListener('mouseleave', function () {
     whatDidYouChose.style.display = 'none'
     whatDidYouChose.outerHTML
 })
+
+toRouteButton.onclick = function() {
+    // window.location.href = 'ticketRoutes.html'
+    alert('В разработке!')
+}
 
 const toNotesButton = document.getElementById('toNotesBtn')
 

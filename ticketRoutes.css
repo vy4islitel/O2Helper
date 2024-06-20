@@ -1,0 +1,132 @@
+.ticketRoutes_main_box_parent {
+    align-items: center;
+    width: 420px;
+    margin-top: 5%;
+    display: flex;
+}
+
+.ticketRoutes_main_box_dispgrid {
+    display: grid;
+}
+
+.ticketRoutes_main_box_header {
+    display: flex;
+    background-color: rgba(25,25,25,0.5);
+    border-radius: 10px;
+    width: 410px;
+}
+
+.ticketRoutes_main_box_header p {
+    color: white;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.ticketRoutes_main_box_flexcontent {
+    margin-top: 5%;
+    width: 400px;
+    display: flex;
+}
+
+.ticketRoutes_main_box_gridcontent {
+    display: grid;
+}
+
+.ticketRoutes_main_box_gridcontent_aboutbox {
+    background-color: rgba(255,255,255,0.5);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.ticketRoutes_main_box_gridcontent_aboutbox p {
+    text-align: center;
+}
+
+.ticketRoutes_main_box_gridcontent_specializeSector {
+    width: 400px;
+    display: grid;
+    margin-top: 5%;
+    background-color: rgba(25,25,25,0.3);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 10px solid rgb(25,25,25);
+}
+
+.ticketRoutes_main_box_gridcontent_specializeSector_header {
+    width: 400px;
+    display: flex;
+    background-color: rgba(25,25,25,0.5);
+    border-radius: 10px;
+}
+
+.ticketRoutes_main_box_gridcontent_specializeSector_header p {
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.ticketRoutes_main_box_gridcontent_specializeSector_flexButtonsColumn {
+    display: flex;
+    margin-top: 5%;
+}
+
+.ticketRoutes_main_box_gridcontent_specializeSector_flexButtonsColumn button {
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: rgba(25,25,25,0.5);
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    width: 110px;
+}
+
+.ticketRoutes_main_box_gridcontent_specializeSector_flexButtonsColumn button:hover {
+    background-color: rgba(255,255,255,0.5);
+    color: black;
+    transition: 0.5s ease;
+}
+
+.ticketRoutes_main_box_gridcontent_hotWordsSector {
+    margin-top: 5%;
+    background-color: rgba(25,25,25,0.3);
+}
+
+.ticketRoutes_main_box_gridcontent_hotWordsSector_header {
+    display: flex;
+    background-color: rgba(25,25,25,0.5);
+    width: 420px;
+    border-radius: 10px;
+}
+
+.ticketRoutes_main_box_gridcontent_hotWordsSector_header p {
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.ticketRoutes_main_box_gridcontent_hotWordsSector_buttonsBox {
+    display: grid;
+}
+
+.ticketRoutes_main_box_gridcontent_hotWordsSector_buttonsBox button {
+    color: white;
+    width: 420px;
+    padding: 5px;
+    margin-top: 5px;
+    border: none;
+    background-color: rgba(25,25,25,0.5);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.ticketRoutes_main_box_gridcontent_hotWordsSector_buttonsBox button:hover {
+    color: black;
+    background-color: rgba(255,255,255,0.5);
+    padding: 15px;
+    transition: 0.5s ease;
+}
